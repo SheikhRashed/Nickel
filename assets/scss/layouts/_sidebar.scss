@@ -64,6 +64,54 @@
 	}
 }
 
+.sticky-sidebar {
+	left: 0;
+	top: 50%;
+	z-index: 99;
+	position: fixed;
+	padding: 0px;
+	transform: translateY(-50%);
+	background-color: #fff;
+	border-top-right-radius: 38px;
+	border-bottom-right-radius: 38px;
+	box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+
+	@include max(575px) {
+		display: none;
+	}
+
+	li {
+		display: flex;
+		padding: 24px;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.395);
+		@include max(767px) {
+			padding: 12px;
+		}
+		&:nth-last-child(1) {
+			border: 0px;
+		}
+		&:hover {
+			a {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+		a {
+			img {
+				filter: grayscale(1);
+				transform: scale(1);
+
+				@include max(767px) {
+					transform: scale(0.8);
+				}
+			}
+		}
+	}
+}
+
 body {
 	&.open {
 		.sidebar {

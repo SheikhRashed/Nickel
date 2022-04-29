@@ -193,4 +193,26 @@
 			}
 		}
 	}
+
+	&-add {
+		top: 50%;
+		right: 20px;
+		width: 258px;
+		height: 90%;
+		display: flex;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		transform: translateY(-50%);
+		backdrop-filter: blur(20px);
+		border-bottom-right-radius: 80px;
+		-webkit-backdrop-filter: blur(20px);
+		background: rgba(255, 255, 255, 0.1);
+		border: 5px solid rgba(255, 255, 255, 0.18);
+
+		@include max(767px) {
+			width: 140px;
+		}
+	}
 }
