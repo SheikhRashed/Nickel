@@ -1,13 +1,21 @@
 .header {
 	top: 0;
 	left: 0;
-	width: 100%;
-	position: fixed;
+	width: 82.9%;
 	z-index: 999;
-	// background-color: rgba(0, 0, 0, 0.608);
+	position: fixed;
+
+	@include max(991px) {
+		width: 100%;
+	}
 
 	&-primary {
 		padding: 40px 0px;
+
+		&.bg {
+			background-color: rgba(0, 0, 0, 0.608);
+		}
+
 		.container {
 			display: flex;
 			align-items: center;

@@ -1,0 +1,73 @@
+.sidebar {
+	padding: 40px 24px;
+	transition: all 0.4s linear;
+	&--sm {
+		top: 0;
+		z-index: 999;
+		left: -100%;
+		position: fixed;
+		padding-top: 90px;
+		@include min(992px) {
+			display: none;
+		}
+	}
+
+	&-menu {
+		padding: 0px;
+		li {
+			margin-bottom: 24px;
+			a {
+				width: 100%;
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&-promo {
+		padding: 24px;
+		border-radius: 12px;
+		position: relative;
+		overflow: hidden;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 1) 1%,
+			rgba(115, 115, 115, 1) 100%
+		);
+
+		.price {
+			text-align: right;
+
+			h2,
+			p {
+				font-size: 36px;
+				line-height: 52px;
+				font-weight: 700;
+				font-family: "Poppins", sans-serif;
+			}
+		}
+
+		a {
+			font-size: 20px;
+			line-height: 52px;
+			text-align: center;
+			width: 100%;
+			display: inline-block;
+			text-transform: capitalize;
+		}
+	}
+
+	&-close {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+	}
+}
+
+body {
+	&.open {
+		.sidebar {
+			left: 0;
+		}
+	}
+}

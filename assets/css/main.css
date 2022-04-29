@@ -353,13 +353,23 @@ body {
 .header {
   top: 0;
   left: 0;
-  width: 100%;
-  position: fixed;
+  width: 82.9%;
   z-index: 999;
+  position: fixed;
+}
+
+@media (max-width: 991px) {
+  .header {
+    width: 100%;
+  }
 }
 
 .header-primary {
   padding: 40px 0px;
+}
+
+.header-primary.bg {
+  background-color: rgba(0, 0, 0, 0.608);
 }
 
 .header-primary .container {
@@ -681,5 +691,77 @@ body {
 
 .articles .article {
   margin-bottom: 80px;
+}
+
+.sidebar {
+  padding: 40px 24px;
+  transition: all 0.4s linear;
+}
+
+.sidebar--sm {
+  top: 0;
+  z-index: 999;
+  left: -100%;
+  position: fixed;
+  padding-top: 90px;
+}
+
+@media (min-width: 992px) {
+  .sidebar--sm {
+    display: none;
+  }
+}
+
+.sidebar-menu {
+  padding: 0px;
+}
+
+.sidebar-menu li {
+  margin-bottom: 24px;
+}
+
+.sidebar-menu li a {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.sidebar-promo {
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  background: linear-gradient(90deg, white 1%, #737373 100%);
+}
+
+.sidebar-promo .price {
+  text-align: right;
+}
+
+.sidebar-promo .price h2,
+.sidebar-promo .price p {
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar-promo a {
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+body.open .sidebar {
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
