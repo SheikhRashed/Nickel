@@ -1,0 +1,29 @@
+.search-field {
+	width: 400px;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	padding: 12px 16px;
+	border-radius: 60px;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.444);
+
+	&__icon {
+		position: absolute;
+	}
+
+	input {
+		color: #fff;
+		width: 80%;
+		height: 100%;
+		margin: 0px auto;
+		font-weight: 300;
+		text-align: center;
+		background-color: transparent;
+
+		&::placeholder {
+			color: #fff;
+			font-style: italic;
+		}
+	}
+}
