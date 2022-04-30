@@ -1910,4 +1910,168 @@ body.open .sidebar {
   font-style: italic;
   font-weight: 300;
 }
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.login::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .login::after {
+    width: 100%;
+    height: 38%;
+  }
+}
+
+.login-card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 110px 0px;
+  border: 3px solid #fff;
+  box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+}
+
+@media (max-width: 991px) {
+  .login-card {
+    padding: 60px 0px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .login-card {
+    width: 80%;
+  }
+}
+
+.login-card .login-brand {
+  width: 375px;
+  padding: 0px 95px;
+}
+
+@media (max-width: 991px) {
+  .login-card .login-brand {
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 110px;
+  }
+}
+
+.login-card .login-info {
+  padding: 0px 110px;
+}
+
+@media (max-width: 991px) {
+  .login-card .login-info {
+    padding: 0px 24px;
+  }
+}
+
+.login-card .login-info h2 {
+  color: #4c4c4c;
+  font-size: 42px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .login-card .login-info h2 {
+    font-size: 26px;
+    lilne-height: 26px;
+    padding-bottom: 24px;
+  }
+}
+
+.login-card .login-info .form-fields {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #707070;
+}
+
+.login-card .login-info .form-fields a {
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card .login-info .form-field {
+  width: 350px;
+  overflow: hidden;
+  border-radius: 38px;
+  position: relative;
+  border: 2px solid #707070;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+  .login-card .login-info .form-field {
+    width: 100%;
+  }
+}
+
+.login-card .login-info .form-field input {
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding: 12px 26px;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+  .login-card .login-info .form-field input {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+.login-card .login-info button {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 12px 0px;
+  position: relative;
+  border-radius: 38px;
+  display: inline-block;
+  background-color: #000;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card .login-info button span {
+  top: 50%;
+  right: 24px;
+  position: absolute;
+  transform: translateY(-50%);
+}
 /*# sourceMappingURL=main.css.map */

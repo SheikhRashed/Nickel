@@ -1,0 +1,141 @@
+.login {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	&::after {
+		content: "";
+		top: 0;
+		left: 0;
+		width: 45%;
+		height: 100%;
+		position: absolute;
+		background-color: #000;
+		z-index: -1;
+		@include max(991px) {
+			width: 100%;
+			height: 38%;
+		}
+	}
+
+	&-card {
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		padding: 110px 0px;
+		border: 3px solid #fff;
+		box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+
+		@include max(991px) {
+			padding: 60px 0px;
+			flex-direction: column;
+		}
+
+		@include max(575px) {
+			width: 80%;
+		}
+
+		.login-brand {
+			width: 375px;
+			padding: 0px 95px;
+
+			@include max(991px) {
+				padding: 0px;
+				text-align: center;
+				padding-bottom: 110px;
+			}
+		}
+
+		.login-info {
+			padding: 0px 110px;
+			@include max(991px) {
+				padding: 0px 24px;
+			}
+			h2 {
+				color: #4c4c4c;
+				font-size: 42px;
+				line-height: 26px;
+				font-weight: 700;
+				text-align: center;
+				padding-bottom: 50px;
+				font-family: "Poppins", sans-serif;
+
+				@include max(991px) {
+					font-size: 26px;
+					lilne-height: 26px;
+					padding-bottom: 24px;
+				}
+			}
+
+			.form-fields {
+				text-align: center;
+				padding-bottom: 30px;
+				margin-bottom: 36px;
+				border-bottom: 1px solid #707070;
+
+				a {
+					color: #4c4c4c;
+					font-size: 14px;
+					line-height: 26px;
+					font-style: italic;
+					font-weight: 300;
+					text-decoration: underline;
+					font-family: "Poppins", sans-serif;
+				}
+			}
+
+			.form-field {
+				width: 350px;
+				overflow: hidden;
+				border-radius: 38px;
+				position: relative;
+				border: 2px solid #707070;
+				margin-bottom: 18px;
+				@include max(767px) {
+					width: 100%;
+				}
+
+				input {
+					width: 100%;
+					font-size: 18px;
+					line-height: 26px;
+					text-align: center;
+					padding: 12px 26px;
+					font-style: italic;
+					font-family: "Poppins", sans-serif;
+					background-color: transparent;
+
+					@include max(991px) {
+						font-size: 14px;
+						line-height: 26px;
+					}
+				}
+			}
+
+			button {
+				width: 100%;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 26px;
+				padding: 12px 0px;
+				position: relative;
+				border-radius: 38px;
+				display: inline-block;
+				background-color: #000;
+				text-transform: uppercase;
+				font-family: "Poppins", sans-serif;
+				span {
+					top: 50%;
+					right: 24px;
+					position: absolute;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+}
