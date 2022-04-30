@@ -16,13 +16,13 @@
 		border-bottom: 1px solid #70707049;
 
 		&-link {
-			width: 230px;
 			font-size: 24px;
 			font-weight: 400;
 			color: #868686;
 			line-height: 35px;
-			padding: 16px 0px;
+			padding: 16px 60px;
 			border-radius: 0px;
+			white-space: nowrap;
 			text-transform: capitalize;
 			border-right: 1px solid #70707049;
 			&.active {
