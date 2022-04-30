@@ -8,12 +8,19 @@
 		box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
 	}
 	.nav {
+		flex-wrap: nowrap;
 		overflow: hidden;
 		background-color: #f5f5f5;
 		border-top-left-radius: 24px;
 		border-top-right-radius: 24px;
 		margin-bottom: 0px !important;
 		border-bottom: 1px solid #70707049;
+
+		@include max(991px) {
+			max-width: 100%;
+			overflow: hidden;
+			overflow-x: scroll;
+		}
 
 		&-link {
 			font-size: 24px;
@@ -35,7 +42,9 @@
 	}
 	.tab-content {
 		padding: 40px 60px;
-
+		@include max(991px) {
+			padding: 24px;
+		}
 		.article-card {
 			margin-bottom: 24px;
 		}

@@ -350,45 +350,6 @@ body {
   transform: translateY(-50%);
 }
 
-.articles-content {
-  margin: 90px 0px;
-  position: relative;
-}
-
-.articles-content blockquote p {
-  color: #000000;
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  font-family: "Tinos", serif;
-}
-
-@media (max-width: 767px) {
-  .articles-content blockquote p {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-.articles-content-wrapper {
-  position: relative;
-}
-
-.articles-content-edit {
-  width: 32px;
-  height: 32px;
-  top: -30px;
-  right: 0;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
-}
-
-.articles-content-edit svg {
-  transform: scale(0.6);
-}
-
 .article-card {
   overflow: hidden;
   position: relative;
@@ -469,12 +430,21 @@ body {
 }
 
 .tabs .nav {
+  flex-wrap: nowrap;
   overflow: hidden;
   background-color: #f5f5f5;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   margin-bottom: 0px !important;
   border-bottom: 1px solid #70707049;
+}
+
+@media (max-width: 991px) {
+  .tabs .nav {
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 }
 
 .tabs .nav-link {
@@ -498,6 +468,12 @@ body {
 
 .tabs .tab-content {
   padding: 40px 60px;
+}
+
+@media (max-width: 991px) {
+  .tabs .tab-content {
+    padding: 24px;
+  }
 }
 
 .tabs .tab-content .article-card {
@@ -892,6 +868,97 @@ body {
   }
 }
 
+.banner-stream .banner-content {
+  width: 98%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  position: absolute;
+  border-radius: 60px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.banner-stream .banner-content__info {
+  max-width: 1200px;
+}
+
+.banner-stream .banner-content__info h2 {
+  font-size: 92px;
+  line-height: 78px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  font-family: "Tinos", serif;
+}
+
+@media (max-width: 991px) {
+  .banner-stream .banner-content__info h2 {
+    font-size: 24px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
+}
+
+.banner-stream .banner-content__info p {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Tinos", serif;
+}
+
+@media (max-width: 991px) {
+  .banner-stream .banner-content__info p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.banner-stream .banner-content__info .bar {
+  width: 280px;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.311);
+}
+
+@media (max-width: 991px) {
+  .banner-stream .banner-content__info .bar {
+    width: 150px;
+    height: 6px;
+  }
+}
+
+.banner-stream .banner-content__info .bar::after {
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff !important;
+  transform: translateY(-50%);
+}
+
+.banner-stream .banner-content .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .articles {
   overflow: hidden;
   position: relative;
@@ -1117,6 +1184,13 @@ body {
   margin-top: 80px;
 }
 
+@media (max-width: 991px) {
+  .articles-content__share {
+    padding: 12px 24px;
+    width: 100%;
+  }
+}
+
 .articles-content__share input {
   color: #757575;
   font-size: 24px;
@@ -1126,6 +1200,14 @@ body {
   height: 100%;
   background-color: transparent;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .articles-content__share input {
+    font-size: 16px;
+    line-height: 21px;
+    width: 80%;
+  }
 }
 
 .articles-content__share button {
@@ -1142,6 +1224,12 @@ body {
   border-radius: 45px;
   background-color: #000;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .articles-content__share button {
+    width: 120px;
+  }
 }
 
 .sidebar {

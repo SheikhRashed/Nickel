@@ -199,6 +199,11 @@
 		margin: 0px auto;
 		margin-top: 80px;
 
+		@include max(991px) {
+			padding: 12px 24px;
+			width: 100%;
+		}
+
 		input {
 			color: #757575;
 			font-size: 24px;
@@ -208,6 +213,12 @@
 			height: 100%;
 			background-color: transparent;
 			font-family: "Poppins", sans-serif;
+
+			@include max(991px) {
+				font-size: 16px;
+				line-height: 21px;
+				width: 80%;
+			}
 		}
 
 		button {
@@ -224,6 +235,10 @@
 			border-radius: 45px;
 			background-color: #000;
 			font-family: "Poppins", sans-serif;
+
+			@include max(991px) {
+				width: 120px;
+			}
 		}
 	}
 }
