@@ -117,7 +117,7 @@
 					</div>
 
 					<div class="banner-add">
-						<button>
+						<button data-bs-toggle="modal" data-bs-target="#codes">
 							<img src="assets/images/icons/add.svg" alt="" />
 						</button>
 					</div>
@@ -616,6 +616,143 @@
 				</a>
 			</li>
 		</ul>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="codes"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div
+				class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+			>
+				<div class="modal-content">
+					<div class="modal-header flex justify-content-end border-0">
+						<button
+							class="close-btn"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14.625"
+								height="14.625"
+								viewBox="0 0 14.625 14.625"
+							>
+								<path
+									id="Path_308"
+									data-name="Path 308"
+									d="M25.313,23.266l-2.046,2.046L18,20.046l-5.266,5.266-2.046-2.046L15.954,18l-5.266-5.266,2.046-2.046L18,15.954l5.266-5.266,2.046,2.046L20.046,18Z"
+									transform="translate(-10.688 -10.688)"
+									fill="#9a9a9a"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h2>Enter Cities / Zip Codes</h2>
+
+						<form action="#">
+							<div class="field">
+								<label for="location">Add Location</label>
+								<div class="field-wrapper">
+									<input
+										type="text"
+										placeholder="Enter Cities/ Zip Codes"
+									/>
+								</div>
+							</div>
+
+							<button class="add-btn">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="25.344"
+										height="25.344"
+										viewBox="0 0 25.344 25.344"
+									>
+										<g
+											id="Icon_ionic-ios-add-circle-outline"
+											data-name="Icon ionic-ios-add-circle-outline"
+											transform="translate(-3.375 -3.375)"
+										>
+											<path
+												id="Path_311"
+												data-name="Path 311"
+												d="M22.514,16.025H17.975V11.486a.975.975,0,1,0-1.95,0v4.539H11.486a.934.934,0,0,0-.975.975.944.944,0,0,0,.975.975h4.539v4.539a.944.944,0,0,0,.975.975.97.97,0,0,0,.975-.975V17.975h4.539a.975.975,0,1,0,0-1.95Z"
+												transform="translate(-0.953 -0.953)"
+											/>
+											<path
+												id="Path_312"
+												data-name="Path 312"
+												d="M16.047,5.081A10.962,10.962,0,1,1,8.292,8.292a10.894,10.894,0,0,1,7.756-3.211m0-1.706A12.672,12.672,0,1,0,28.719,16.047,12.67,12.67,0,0,0,16.047,3.375Z"
+											/>
+										</g>
+									</svg>
+								</span>
+								Add More
+							</button>
+
+							<div class="submit-wrapper">
+								<button>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="25.259"
+											height="25.259"
+											viewBox="0 0 25.259 25.259"
+										>
+											<g
+												id="Icon_feather-arrow-up-circle"
+												data-name="Icon feather-arrow-up-circle"
+												transform="translate(1 1)"
+											>
+												<path
+													id="Path_298"
+													data-name="Path 298"
+													d="M26.259,14.629A11.629,11.629,0,1,1,14.629,3,11.629,11.629,0,0,1,26.259,14.629Z"
+													transform="translate(-3 -3)"
+													fill="none"
+													stroke="#fff"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+												/>
+												<path
+													id="Path_299"
+													data-name="Path 299"
+													d="M21.3,16.652,16.652,12,12,16.652"
+													transform="translate(-5.022 -5.022)"
+													fill="none"
+													stroke="#fff"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+												/>
+												<path
+													id="Path_300"
+													data-name="Path 300"
+													d="M18,21.3V12"
+													transform="translate(-6.371 -5.022)"
+													fill="none"
+													stroke="#fff"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+												/>
+											</g>
+										</svg>
+									</span>
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- All js Goes here -->
 		<script src="assets/js/jquery-3.6.0.min.js"></script>
