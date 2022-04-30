@@ -52,3 +52,9 @@ body {
 	font-weight: 400;
 	font-family: "Tinos", serif;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
