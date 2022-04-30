@@ -622,6 +622,210 @@ body {
   margin-right: 12px;
 }
 
+.header-three {
+  width: 100%;
+  position: relative;
+}
+
+.header-three .top {
+  padding: 30px 0px;
+  background-color: #fff;
+}
+
+.header-three .bottom {
+  padding: 20px 0px;
+  background-color: #f5f5f5;
+}
+
+.header-three .bottom .container-fluid {
+  display: flex;
+  padding: 0px 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .header-three .bottom .container-fluid {
+    flex-direction: column;
+  }
+}
+
+.header-three .bottom .author-profile {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 68px;
+  background-color: #fff;
+  box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+}
+
+.header-three .bottom .author-profile__info {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  position: relative;
+}
+
+.header-three .bottom .author-profile__info h2,
+.header-three .bottom .author-profile__info p {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .header-three .bottom .author-profile__info h2,
+  .header-three .bottom .author-profile__info p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.header-three .bottom .author-profile__info .edit {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000;
+  top: -15px;
+  right: -30px;
+}
+
+.header-three .bottom .author-profile__info .bar {
+  width: 180px;
+  height: 2px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: #707070;
+}
+
+@media (max-width: 991px) {
+  .header-three .bottom .author-profile__info .bar {
+    width: 150px;
+    height: 6px;
+  }
+}
+
+.header-three .bottom .author-profile__info .bar::after {
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  background-color: #000000 !important;
+  transform: translateY(-50%);
+}
+
+.header-three .bottom .author-profile__img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.header-three .bottom .author-profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-three .bottom .author-profile__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+}
+
+.header-three .bottom .searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 485px;
+  overflow: hidden;
+  position: relative;
+  padding: 8px 0px;
+  border-radius: 60px;
+  background-color: #000;
+}
+
+@media (max-width: 1380px) {
+  .header-three .bottom .searchbox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-three .bottom .searchbox {
+    margin: 24px 0px;
+  }
+}
+
+.header-three .bottom .searchbox input {
+  color: #fff;
+  width: 80%;
+  margin: 0px auto;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-three .bottom .searchbox input::placeholder {
+  text-transform: capitalize;
+  color: inherit;
+}
+
+.header-three .bottom .searchbox .icon {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.header-three .bottom .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-three .bottom .menu li {
+  margin-right: 12px;
+}
+
+.header-three .bottom .menu li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 8px 12px;
+  border-radius: 26px;
+  display: inline-block;
+  border: 1px solid #707070;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+
+.header-three .bottom .menu li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .banner {
   height: 80vh;
   border-bottom-left-radius: 60px;

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nickel</title>
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href=""> -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Tinos:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!-- Main css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css.map" />
+	</head>
+
+	<body>
+		<!-- header  section start  -->
+		<header class="header header-three">
+			<div class="top">
+				<div class="container-fluid">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a href="#">
+							<img src="assets/images/logo-dark.png" alt="brand-logo" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="container-fluid">
+					<!-- user profile  -->
+					<div class="author-profile">
+						<div class="author-profile__info">
+							<div class="author-profile__img">
+								<img src="assets/images/user.png" alt="user" />
+							</div>
+							<div>
+								<h2>Author Name</h2>
+								<p>Ny,Ny</p>
+								<span class="bar"></span>
+								<!-- actions -->
+								<button class="edit">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="15.852"
+										height="15.716"
+										viewBox="0 0 15.852 15.716"
+									>
+										<g
+											id="Icon_feather-edit"
+											data-name="Icon feather-edit"
+											transform="translate(-2.25 -2.068)"
+										>
+											<path
+												id="Path_273"
+												data-name="Path 273"
+												d="M9.359,6H4.413A1.413,1.413,0,0,0,3,7.413V17.3a1.413,1.413,0,0,0,1.413,1.413H14.3A1.413,1.413,0,0,0,15.717,17.3V12.359"
+												transform="translate(0 -1.683)"
+												fill="none"
+												stroke="#fff"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1.5"
+											/>
+											<path
+												id="Path_274"
+												data-name="Path 274"
+												d="M19.418,3.257a1.5,1.5,0,0,1,2.12,2.12l-6.712,6.712L12,12.795l.707-2.826Z"
+												transform="translate(-4.761)"
+												fill="none"
+												stroke="#fff"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1.5"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="author-profile__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32.999"
+								height="32.999"
+								viewBox="0 0 32.999 32.999"
+							>
+								<g
+									id="Icon_material-rss-feed"
+									data-name="Icon material-rss-feed"
+									transform="translate(-6 -6.66)"
+								>
+									<path
+										id="Path_275"
+										data-name="Path 275"
+										d="M15.247,28.083a4.623,4.623,0,1,1-4.623-4.623,4.623,4.623,0,0,1,4.623,4.623Z"
+										transform="translate(0 6.953)"
+									/>
+									<path
+										id="Path_276"
+										data-name="Path 276"
+										d="M6,6.66v6a27,27,0,0,1,27,27h6A33.009,33.009,0,0,0,6,6.66Zm0,12v6A15.007,15.007,0,0,1,20.994,39.659h6a20.989,20.989,0,0,0-21-21Z"
+										transform="translate(0 0)"
+									/>
+								</g>
+							</svg>
+						</div>
+					</div>
+
+					<!-- Search Field  -->
+					<form action="#">
+						<div class="searchbox">
+							<input type="text" placeholder="Search..." />
+							<span class="icon"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="27.467"
+									height="27.467"
+									viewBox="0 0 27.467 27.467"
+								>
+									<g
+										id="Icon_feather-search"
+										data-name="Icon feather-search"
+										transform="translate(1.5 1.5)"
+										opacity="0.8"
+										style="isolation: isolate"
+									>
+										<path
+											id="Path_1"
+											data-name="Path 1"
+											d="M25.7,15.1A10.6,10.6,0,1,1,15.1,4.5,10.6,10.6,0,0,1,25.7,15.1Z"
+											transform="translate(-4.5 -4.5)"
+											fill="none"
+											stroke="#fafafa"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="3"
+										/>
+										<path
+											id="Path_2"
+											data-name="Path 2"
+											d="M30.738,30.738l-5.763-5.763"
+											transform="translate(-6.892 -6.892)"
+											fill="none"
+											stroke="#fafafa"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="3"
+										/>
+									</g>
+								</svg>
+							</span>
+						</div>
+					</form>
+
+					<!-- Menues -->
+					<ul class="menu">
+						<li><a href="#">Published</a></li>
+						<li><a href="#">Local</a></li>
+						<li><a href="#">Subscription</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- header  section end  -->
+
+		<!-- Articles Content  -->
+		<section class="articles">
+			<div class="container">
+				<div class="article">
+					<div class="article-content">
+						<div class="article-img">
+							<img
+								src="https://images.unsplash.com/photo-1651091484451-26bde82c9590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+								alt=""
+							/>
+						</div>
+						<div class="article-info">
+							<h2>
+								Quest ‘Invite Links’ Are the Easiest Way to Invite Friends
+								to VR, But Few Seem to Know They Exist.
+							</h2>
+							<blockquote>
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing
+									elit. Accusamus, rerum itaque unde sint iste quod fuga
+									assumenda in earum consectetur perferendis et
+									necessitatibus. Ratione fuga similique earum enim
+									autem illum?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Veritatis excepturi totam aliquid officiis modi
+									aut dolorem dolor officia eius quasi! Inventore eaque
+									excepturi necessitatibus veniam, cum voluptatibus
+									dolore ratione debitis.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Reprehenderit molestiae deserunt similique odit
+									maiores corrupti non totam cupiditate voluptas minima
+									facilis modi doloremque nostrum atque dolore, nesciunt
+									saepe ipsum qui.
+								</p>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing
+									elit. Praesentium impedit beatae, itaque assumenda
+									dolorum nobis eveniet autem? Repellendus, veritatis
+									ipsum! Provident vitae aliquid ipsum voluptatibus modi
+									laboriosam repudiandae dignissimos totam!
+								</p>
+							</blockquote>
+							<a href="#" class="btn">Subscribe / View</a>
+						</div>
+					</div>
+					<div class="article-heading">
+						<div class="article-heading-info">
+							<p>
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="23.145"
+										height="26.451"
+										viewBox="0 0 23.145 26.451"
+									>
+										<path
+											id="Icon_awesome-calendar-alt"
+											data-name="Icon awesome-calendar-alt"
+											d="M0,23.971a2.48,2.48,0,0,0,2.48,2.48H20.665a2.48,2.48,0,0,0,2.48-2.48V9.919H0ZM16.532,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62ZM9.919,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62ZM3.306,13.845a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62ZM20.665,3.306h-2.48V.827A.829.829,0,0,0,17.358,0H15.705a.829.829,0,0,0-.827.827v2.48H8.266V.827A.829.829,0,0,0,7.439,0H5.786A.829.829,0,0,0,4.96.827v2.48H2.48A2.48,2.48,0,0,0,0,5.786v2.48H23.145V5.786A2.48,2.48,0,0,0,20.665,3.306Z"
+											fill="#787878"
+											opacity="0.66"
+										/>
+									</svg>
+								</span>
+								April-02-2022
+							</p>
+							<h2>
+								Pope Francis Prays for Peace in Ukraine and Warns of
+								Nuclear War
+							</h2>
+							<span class="bar"></span>
+						</div>
+						<div class="article-heading-brand">
+							<img src="assets/images/paul.png" alt="" />
+							<p>
+								Paul <br />
+								Barnabic
+							</p>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="article-content">
+						<div class="article-img">
+							<img
+								src="https://images.unsplash.com/photo-1651091484451-26bde82c9590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+								alt=""
+							/>
+						</div>
+						<div class="article-info">
+							<h2>
+								Quest ‘Invite Links’ Are the Easiest Way to Invite Friends
+								to VR, But Few Seem to Know They Exist.
+							</h2>
+							<blockquote>
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing
+									elit. Accusamus, rerum itaque unde sint iste quod fuga
+									assumenda in earum consectetur perferendis et
+									necessitatibus. Ratione fuga similique earum enim
+									autem illum?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Veritatis excepturi totam aliquid officiis modi
+									aut dolorem dolor officia eius quasi! Inventore eaque
+									excepturi necessitatibus veniam, cum voluptatibus
+									dolore ratione debitis.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Reprehenderit molestiae deserunt similique odit
+									maiores corrupti non totam cupiditate voluptas minima
+									facilis modi doloremque nostrum atque dolore, nesciunt
+									saepe ipsum qui.
+								</p>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing
+									elit. Praesentium impedit beatae, itaque assumenda
+									dolorum nobis eveniet autem? Repellendus, veritatis
+									ipsum! Provident vitae aliquid ipsum voluptatibus modi
+									laboriosam repudiandae dignissimos totam!
+								</p>
+							</blockquote>
+							<a href="#" class="btn">Subscribe / View</a>
+						</div>
+					</div>
+					<div class="article-heading">
+						<div class="article-heading-info">
+							<p>
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="23.145"
+										height="26.451"
+										viewBox="0 0 23.145 26.451"
+									>
+										<path
+											id="Icon_awesome-calendar-alt"
+											data-name="Icon awesome-calendar-alt"
+											d="M0,23.971a2.48,2.48,0,0,0,2.48,2.48H20.665a2.48,2.48,0,0,0,2.48-2.48V9.919H0ZM16.532,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62ZM9.919,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62ZM3.306,13.845a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62ZM20.665,3.306h-2.48V.827A.829.829,0,0,0,17.358,0H15.705a.829.829,0,0,0-.827.827v2.48H8.266V.827A.829.829,0,0,0,7.439,0H5.786A.829.829,0,0,0,4.96.827v2.48H2.48A2.48,2.48,0,0,0,0,5.786v2.48H23.145V5.786A2.48,2.48,0,0,0,20.665,3.306Z"
+											fill="#787878"
+											opacity="0.66"
+										/>
+									</svg>
+								</span>
+								April-02-2022
+							</p>
+							<h2>
+								Texas Wildfire Grows to 33,000 Acres, but Poses Little
+								Threat
+							</h2>
+							<span class="bar"></span>
+						</div>
+						<div class="article-heading-brand">
+							<img src="assets/images/richard.png" alt="" />
+							<p>
+								Richard <br />
+								Luscombe
+							</p>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="article-content">
+						<div class="article-img">
+							<img
+								src="https://images.unsplash.com/photo-1651091484451-26bde82c9590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+								alt=""
+							/>
+						</div>
+						<div class="article-info">
+							<h2>
+								Quest ‘Invite Links’ Are the Easiest Way to Invite Friends
+								to VR, But Few Seem to Know They Exist.
+							</h2>
+							<blockquote>
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing
+									elit. Accusamus, rerum itaque unde sint iste quod fuga
+									assumenda in earum consectetur perferendis et
+									necessitatibus. Ratione fuga similique earum enim
+									autem illum?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Veritatis excepturi totam aliquid officiis modi
+									aut dolorem dolor officia eius quasi! Inventore eaque
+									excepturi necessitatibus veniam, cum voluptatibus
+									dolore ratione debitis.
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Reprehenderit molestiae deserunt similique odit
+									maiores corrupti non totam cupiditate voluptas minima
+									facilis modi doloremque nostrum atque dolore, nesciunt
+									saepe ipsum qui.
+								</p>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing
+									elit. Praesentium impedit beatae, itaque assumenda
+									dolorum nobis eveniet autem? Repellendus, veritatis
+									ipsum! Provident vitae aliquid ipsum voluptatibus modi
+									laboriosam repudiandae dignissimos totam!
+								</p>
+							</blockquote>
+							<a href="#" class="btn">Subscribe / View</a>
+						</div>
+					</div>
+					<div class="article-heading">
+						<div class="article-heading-info">
+							<p>
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="23.145"
+										height="26.451"
+										viewBox="0 0 23.145 26.451"
+									>
+										<path
+											id="Icon_awesome-calendar-alt"
+											data-name="Icon awesome-calendar-alt"
+											d="M0,23.971a2.48,2.48,0,0,0,2.48,2.48H20.665a2.48,2.48,0,0,0,2.48-2.48V9.919H0ZM16.532,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H17.152a.622.622,0,0,1-.62-.62ZM9.919,13.845a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62h2.066a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H10.539a.622.622,0,0,1-.62-.62ZM3.306,13.845a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62Zm0,6.613a.622.622,0,0,1,.62-.62H5.993a.622.622,0,0,1,.62.62v2.066a.622.622,0,0,1-.62.62H3.926a.622.622,0,0,1-.62-.62ZM20.665,3.306h-2.48V.827A.829.829,0,0,0,17.358,0H15.705a.829.829,0,0,0-.827.827v2.48H8.266V.827A.829.829,0,0,0,7.439,0H5.786A.829.829,0,0,0,4.96.827v2.48H2.48A2.48,2.48,0,0,0,0,5.786v2.48H23.145V5.786A2.48,2.48,0,0,0,20.665,3.306Z"
+											fill="#787878"
+											opacity="0.66"
+										/>
+									</svg>
+								</span>
+								April-02-2022
+							</p>
+							<h2>
+								Gov. Abbott sends 2nd bus of migrants to Washington DC to
+								protest end of Title 42
+							</h2>
+							<span class="bar"></span>
+						</div>
+						<div class="article-heading-brand">
+							<img src="assets/images/devil.png" alt="" />
+							<p>
+								James <br />
+								David
+							</p>
+							<span class="bar"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div
+			class="sidebar sidebar--sm bg-dark h-100"
+			style="
+				background: url(assets/images/overlay.png) center center/cover no-repeat;
+			"
+		>
+			<div class="sidebar-close">
+				<img src="assets/images/icons/close.svg" alt="" style="width: 30px" />
+			</div>
+
+			<ul class="sidebar-menu">
+				<li><a class="btn" href="#">Report</a></li>
+				<li><a class="btn" href="#">Go Live</a></li>
+				<li><a class="btn" href="#">About</a></li>
+				<li><a class="btn" href="#">My Library</a></li>
+				<li><a class="btn" href="#">MY Reporting</a></li>
+				<li><a class="btn" href="#">Referrals</a></li>
+				<li><a class="btn" href="#">Signup</a></li>
+				<li><a class="btn" href="#">Login</a></li>
+			</ul>
+
+			<div class="sidebar-promo">
+				<div class="price">
+					<h2>$3,000,000</h2>
+					<p>$4.35</p>
+				</div>
+
+				<a href="#">View Financial </a>
+			</div>
+		</div>
+
+		<!-- All js Goes here -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>
