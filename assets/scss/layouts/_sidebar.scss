@@ -9,11 +9,17 @@
 		padding-top: 90px;
 		width: 70%;
 		overflow-y: scroll;
-		@include min(992px) {
+		@include min(1200px) {
 			display: none;
 		}
 
+		@include max(1200px) {
+			width: 30%;
+		}
 		@include max(767px) {
+			width: 40%;
+		}
+		@include max(575px) {
 			width: 80%;
 		}
 	}
@@ -50,7 +56,7 @@
 				line-height: 52px;
 				font-weight: 700;
 				font-family: "Poppins", sans-serif;
-				@include max(767px) {
+				@include max(1200px) {
 					font-size: 24px;
 					line-height: 32px;
 				}
