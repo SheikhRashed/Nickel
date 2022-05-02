@@ -32,6 +32,11 @@
 			white-space: nowrap;
 			text-transform: capitalize;
 			border-right: 1px solid #70707049;
+
+			@include max(767px) {
+				font-size: 18px;
+				line-height: 26px;
+			}
 			&.active {
 				color: #000;
 				font-weight: 600;

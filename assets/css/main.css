@@ -402,15 +402,16 @@ input::-webkit-inner-spin-button {
 }
 
 .article-card-upload {
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 
 .article-card-upload input {
-  font-size: 0px;
+  cursor: pointer;
   width: 100%;
   display: flex;
   height: 316px;
+  font-size: 0px;
   align-items: center;
   justify-content: center;
 }
@@ -514,6 +515,13 @@ input::-webkit-inner-spin-button {
   white-space: nowrap;
   text-transform: capitalize;
   border-right: 1px solid #70707049;
+}
+
+@media (max-width: 767px) {
+  .tabs .nav-link {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .tabs .nav-link.active {
@@ -620,6 +628,12 @@ input::-webkit-inner-spin-button {
   left: 0;
   z-index: 999;
   position: fixed;
+}
+
+@media (max-width: 575px) {
+  .header-logo img {
+    width: 80px;
+  }
 }
 
 .header-primary {
@@ -976,7 +990,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 767px) {
   .banner {
-    padding-top: 220px;
+    padding-top: 90px;
   }
 }
 
@@ -1416,7 +1430,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 767px) {
   .author-details .author-info h2 {
     font-size: 12px;
-    line-height: 21px;
+    line-height: 12px;
   }
 }
 
@@ -1511,6 +1525,7 @@ input::-webkit-inner-spin-button {
 }
 
 .articles-content {
+  overflow: hidden;
   margin: 90px 0px;
   position: relative;
 }
@@ -1558,12 +1573,12 @@ input::-webkit-inner-spin-button {
 .articles-content__share {
   width: 850px;
   overflow: hidden;
+  margin: 0px auto;
   position: relative;
+  margin-top: 80px;
   border-radius: 45px;
   padding: 28px 50px;
   background-color: #eeeeee;
-  margin: 0px auto;
-  margin-top: 80px;
 }
 
 @media (max-width: 991px) {
@@ -1584,9 +1599,9 @@ input::-webkit-inner-spin-button {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .articles-content__share input {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
     width: 80%;
   }
@@ -1612,6 +1627,12 @@ input::-webkit-inner-spin-button {
   .articles-content__share button {
     width: 120px;
   }
+}
+
+.articles-content .sticky-sidebar {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .sidebar {
@@ -1711,12 +1732,9 @@ input::-webkit-inner-spin-button {
 }
 
 .sticky-sidebar {
-  left: 0;
-  top: 50%;
   z-index: 99;
-  position: fixed;
   padding: 0px;
-  transform: translateY(-50%);
+  width: 104px;
   background-color: #fff;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
@@ -2212,6 +2230,7 @@ body.open .sidebar {
 }
 
 #codes .modal-body {
+  padding: 0px;
   text-align: center;
 }
 
@@ -2222,6 +2241,21 @@ body.open .sidebar {
   padding-bottom: 60px;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 767px) {
+  #codes .modal-body h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  #codes .modal-body h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 #codes .modal-body .add-btn {
@@ -2236,9 +2270,21 @@ body.open .sidebar {
   box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
 }
 
+@media (max-width: 767px) {
+  #codes .modal-body .add-btn {
+    margin-bottom: 24px;
+  }
+}
+
 #codes .modal-body .submit-wrapper {
   padding: 36px 0px;
   border-top: 1px solid #707070;
+}
+
+@media (max-width: 767px) {
+  #codes .modal-body .submit-wrapper {
+    padding: 16px 0px;
+  }
 }
 
 #codes .modal-body .submit-wrapper button {
@@ -2265,6 +2311,12 @@ body.open .sidebar {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  #codes .modal-body .field {
+    flex-direction: column;
+  }
+}
+
 #codes .modal-body .field label {
   font-size: 24px;
   line-height: 36px;
@@ -2273,11 +2325,26 @@ body.open .sidebar {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 767px) {
+  #codes .modal-body .field label {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+}
+
 #codes .modal-body .field-wrapper {
   width: 350px;
   border-radius: 38px;
   background-color: #fff;
   border: 2px solid #707070;
+}
+
+@media (max-width: 767px) {
+  #codes .modal-body .field-wrapper {
+    width: 90%;
+  }
 }
 
 #codes .modal-body .field-wrapper input {
@@ -2293,6 +2360,11 @@ body.open .sidebar {
 
 #codes .modal-body .field-wrapper input::placeholde {
   color: #707070;
+}
+
+#codes .modal-body .add-btn span {
+  margin-right: 12px;
+  display: inline-block;
 }
 
 #publishModal .modal-content {

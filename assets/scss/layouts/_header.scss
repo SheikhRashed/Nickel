@@ -5,6 +5,14 @@
 	z-index: 999;
 	position: fixed;
 
+	&-logo {
+		img {
+			@include max(575px) {
+				width: 80px;
+			}
+		}
+	}
+
 	&-primary {
 		width: 82.9%;
 		padding: 40px 0px;

@@ -81,12 +81,13 @@
 }
 
 .sticky-sidebar {
-	left: 0;
-	top: 50%;
+	// left: 0;
+	// top: 50%;
 	z-index: 99;
-	position: fixed;
+	// position: fixed;
 	padding: 0px;
-	transform: translateY(-50%);
+	// transform: translateY(-50%);
+	width: 104px;
 	background-color: #fff;
 	border-top-right-radius: 38px;
 	border-bottom-right-radius: 38px;
