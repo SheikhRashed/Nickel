@@ -1,5 +1,5 @@
 .banner {
-	height: 80vh;
+	// height: 80vh;
 	border-bottom-left-radius: 60px;
 	border-bottom-right-radius: 60px;
 	overflow: hidden;
@@ -7,8 +7,13 @@
 	width: 100%;
 	display: flex;
 	z-index: 1;
+	padding-top: 480px;
 	padding-bottom: 80px;
 	align-items: flex-end;
+
+	@include max(767px) {
+		padding-top: 220px;
+	}
 
 	&::after {
 		content: "";
@@ -90,7 +95,12 @@
 				font-style: italic;
 				margin-bottom: 12px;
 				font-family: "Tinos", serif;
-
+				@include max(767px) {
+					max-width: 300px;
+				}
+				@include max(575px) {
+					max-width: 200px;
+				}
 				@include max(991px) {
 					font-size: 16px;
 					line-height: 26px;
@@ -212,7 +222,16 @@
 		border: 5px solid rgba(255, 255, 255, 0.18);
 
 		@include max(767px) {
-			width: 140px;
+			width: 80px;
+			border-bottom-right-radius: 40px;
+		}
+
+		button {
+			img {
+				@include max(767px) {
+					width: 30px;
+				}
+			}
 		}
 	}
 

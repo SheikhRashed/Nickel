@@ -82,14 +82,13 @@
 				order: 2;
 			}
 			.logo-lg {
-				// @include max(1199px) {
-				// 	display: none;
-				// }
+				@include max(767px) {
+					display: none;
+				}
 			}
 
 			.logo-sm {
-				display: none;
-				@include min(1200px) {
+				@include min(768px) {
 					display: none;
 				}
 			}

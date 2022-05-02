@@ -2,8 +2,14 @@
 	overflow: hidden;
 	position: relative;
 	margin: 90px 0px;
+	@include max(767px) {
+		margin: 45px 0px;
+	}
 	.article {
 		margin-bottom: 80px;
+		@include max(991px) {
+			margin-bottom: 24px;
+		}
 	}
 }
 
@@ -156,6 +162,9 @@
 .articles-content {
 	margin: 90px 0px;
 	position: relative;
+	@include max(767px) {
+		margin: 45px 0px;
+	}
 	blockquote {
 		p {
 			color: #000000;
