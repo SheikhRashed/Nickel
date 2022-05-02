@@ -365,6 +365,12 @@ input::-webkit-inner-spin-button {
 }
 
 .article-card-upload {
+  position: relative;
+  z-index: 1;
+}
+
+.article-card-upload input {
+  font-size: 0px;
   width: 100%;
   display: flex;
   height: 316px;
@@ -421,6 +427,14 @@ input::-webkit-inner-spin-button {
   line-height: 27px;
   text-transform: capitalize;
   font-family: "Tinos", serif;
+}
+
+.article-card-uploadBtn {
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .tabs {
