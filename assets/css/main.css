@@ -1246,6 +1246,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.banner-stream {
+  padding-top: 860px;
+}
+
 .banner-stream .banner-content {
   width: 98%;
   height: 95%;
