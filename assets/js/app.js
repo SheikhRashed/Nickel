@@ -19,14 +19,14 @@ if (closeBtn) {
 	})
 }
 
-window.onscroll = function () {
-	myFunction()
-}
-
 var header = document.querySelector(".header.header-primary")
 
 if (header) {
 	var sticky = header.offsetTop
+
+	window.onscroll = function () {
+		myFunction()
+	}
 
 	function myFunction() {
 		if (window.pageYOffset > sticky) {
@@ -38,14 +38,16 @@ if (header) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	var demo1 = new BVSelect({
-		selector: "#duration",
-		width: "100%",
-		searchbox: false,
-		offset: true,
-		placeholder: "Select Option",
-		search_placeholder: "Search...",
-		search_autofocus: true,
-		breakpoint: 450,
-	})
+	if (document.querySelector("#duration")) {
+		var demo1 = new BVSelect({
+			selector: "#duration",
+			width: "100%",
+			searchbox: false,
+			offset: true,
+			placeholder: "Select Option",
+			search_placeholder: "Search...",
+			search_autofocus: true,
+			breakpoint: 450,
+		})
+	}
 })

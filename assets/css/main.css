@@ -957,7 +957,8 @@ input::-webkit-inner-spin-button {
   margin-right: 12px;
 }
 
-.header-three .bottom .menu li a {
+.header-three .bottom .menu li a,
+.header-three .bottom .menu li button {
   color: #000;
   font-size: 14px;
   font-weight: 700;
@@ -970,7 +971,8 @@ input::-webkit-inner-spin-button {
   transition: all 0.3s linear;
 }
 
-.header-three .bottom .menu li a:hover {
+.header-three .bottom .menu li a:hover,
+.header-three .bottom .menu li button:hover {
   background-color: #000;
   color: #fff;
 }
@@ -2361,16 +2363,19 @@ body.open .sidebar {
   display: inline-block;
 }
 
-#publishModal .modal-content {
+#publishModal .modal-content,
+.finalStep-modal .modal-content {
   border-radius: 24px;
 }
 
-#publishModal .modal-body {
+#publishModal .modal-body,
+.finalStep-modal .modal-body {
   font-family: "Poppins", sans-serif;
   padding: 0px;
 }
 
-#publishModal .modal-body > h2 {
+#publishModal .modal-body > h2,
+.finalStep-modal .modal-body > h2 {
   color: #000000;
   font-size: 30px;
   line-height: 46px;
@@ -2379,12 +2384,14 @@ body.open .sidebar {
   margin-bottom: 60px;
 }
 
-#publishModal .modal-body .profile-contents {
+#publishModal .modal-body .profile-contents,
+.finalStep-modal .modal-body .profile-contents {
   text-align: center;
   margin: 0px auto;
 }
 
-#publishModal .modal-body .profile-contents > h2 {
+#publishModal .modal-body .profile-contents > h2,
+.finalStep-modal .modal-body .profile-contents > h2 {
   font-size: 24px;
   line-height: 35px;
   font-weight: 600;
@@ -2393,7 +2400,8 @@ body.open .sidebar {
   font-family: "Poppins", sans-serif;
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item {
+#publishModal .modal-body .profile-contents .profile-contents__item,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item {
   display: flex;
   align-items: center;
   padding-bottom: 80px;
@@ -2403,14 +2411,16 @@ body.open .sidebar {
 }
 
 @media (max-width: 991px) {
-  #publishModal .modal-body .profile-contents .profile-contents__item {
+  #publishModal .modal-body .profile-contents .profile-contents__item,
+  .finalStep-modal .modal-body .profile-contents .profile-contents__item {
     width: 100%;
     flex-direction: column;
     padding-bottom: 30px;
   }
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box {
   width: 100%;
   height: 250px;
   cursor: pointer;
@@ -2424,31 +2434,37 @@ body.open .sidebar {
   border: 2px solid #70707049;
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:hover {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:hover,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box:hover {
   color: #fff;
   background-color: #000;
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:hover p {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:hover p,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box:hover p {
   color: #fff;
 }
 
 @media (max-width: 991px) {
-  #publishModal .modal-body .profile-contents .profile-contents__item .profile-box {
+  #publishModal .modal-body .profile-contents .profile-contents__item .profile-box,
+  .finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box {
     margin: 0px;
     margin-bottom: 24px;
   }
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:nth-last-child(1) {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box:nth-last-child(1),
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box:nth-last-child(1) {
   margin: 0px;
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box__icon {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box__icon,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box__icon {
   margin-bottom: 40px;
 }
 
-#publishModal .modal-body .profile-contents .profile-contents__item .profile-box p {
+#publishModal .modal-body .profile-contents .profile-contents__item .profile-box p,
+.finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box p {
   color: #000;
   font-size: 18px;
   line-height: 30px;
@@ -2457,7 +2473,8 @@ body.open .sidebar {
   font-family: "Poppins", sans-serif;
 }
 
-#publishModal .modal-body form > h2 {
+#publishModal .modal-body form > h2,
+.finalStep-modal .modal-body form > h2 {
   color: #000;
   font-size: 24px;
   line-height: 35px;
@@ -2466,13 +2483,16 @@ body.open .sidebar {
 }
 
 @media (max-width: 991px) {
-  #publishModal .modal-body form > h2 {
+  #publishModal .modal-body form > h2,
+  .finalStep-modal .modal-body form > h2 {
     text-align: left;
   }
 }
 
 #publishModal .modal-body form .field,
-#publishModal .modal-body form .form-content {
+#publishModal .modal-body form .form-content,
+.finalStep-modal .modal-body form .field,
+.finalStep-modal .modal-body form .form-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2480,32 +2500,38 @@ body.open .sidebar {
 
 @media (max-width: 991px) {
   #publishModal .modal-body form .field,
-  #publishModal .modal-body form .form-content {
+  #publishModal .modal-body form .form-content,
+  .finalStep-modal .modal-body form .field,
+  .finalStep-modal .modal-body form .form-content {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-#publishModal .modal-body form .form-content {
+#publishModal .modal-body form .form-content,
+.finalStep-modal .modal-body form .form-content {
   width: 70%;
   margin: 0px auto;
   padding-bottom: 60px;
 }
 
 @media (max-width: 1340px) {
-  #publishModal .modal-body form .form-content {
+  #publishModal .modal-body form .form-content,
+  .finalStep-modal .modal-body form .form-content {
     width: 90%;
   }
 }
 
 @media (max-width: 991px) {
-  #publishModal .modal-body form .form-content {
+  #publishModal .modal-body form .form-content,
+  .finalStep-modal .modal-body form .form-content {
     width: 100%;
     flex-direction: column;
   }
 }
 
-#publishModal .modal-body form .form-content .form-check-label {
+#publishModal .modal-body form .form-content .form-check-label,
+.finalStep-modal .modal-body form .form-content .form-check-label {
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -2513,23 +2539,27 @@ body.open .sidebar {
   white-space: nowrap;
 }
 
-#publishModal .modal-body form .form-content .form-check-input:checked {
+#publishModal .modal-body form .form-content .form-check-input:checked,
+.finalStep-modal .modal-body form .form-content .form-check-input:checked {
   background-color: #000;
   border-color: #000;
   box-shadow: none;
 }
 
-#publishModal .modal-body form .field {
+#publishModal .modal-body form .field,
+.finalStep-modal .modal-body form .field {
   margin-right: 24px;
 }
 
 @media (max-width: 991px) {
-  #publishModal .modal-body form .field {
+  #publishModal .modal-body form .field,
+  .finalStep-modal .modal-body form .field {
     margin-bottom: 24px;
   }
 }
 
-#publishModal .modal-body form .field label {
+#publishModal .modal-body form .field label,
+.finalStep-modal .modal-body form .field label {
   color: #000;
   font-size: 18px;
   line-height: 27px;
@@ -2538,14 +2568,16 @@ body.open .sidebar {
   white-space: nowrap;
 }
 
-#publishModal .modal-body form .field-wrapper {
+#publishModal .modal-body form .field-wrapper,
+.finalStep-modal .modal-body form .field-wrapper {
   width: 260px;
   height: 44px;
   border-radius: 25px;
   border: 1px solid #707070;
 }
 
-#publishModal .modal-body form .field-wrapper input {
+#publishModal .modal-body form .field-wrapper input,
+.finalStep-modal .modal-body form .field-wrapper input {
   font-size: 18px;
   line-height: 26px;
   padding: 12px 26px;
@@ -2555,11 +2587,13 @@ body.open .sidebar {
   font-family: "Poppins", sans-serif;
 }
 
-#publishModal .modal-body form .field-wrapper input::placeholde {
+#publishModal .modal-body form .field-wrapper input::placeholde,
+.finalStep-modal .modal-body form .field-wrapper input::placeholde {
   color: #707070;
 }
 
-#publishModal .modal-body form .actions {
+#publishModal .modal-body form .actions,
+.finalStep-modal .modal-body form .actions {
   display: flex;
   padding: 32px;
   align-items: center;
@@ -2567,7 +2601,8 @@ body.open .sidebar {
   justify-content: space-between;
 }
 
-#publishModal .modal-body form .actions button {
+#publishModal .modal-body form .actions button,
+.finalStep-modal .modal-body form .actions button {
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
@@ -2577,7 +2612,8 @@ body.open .sidebar {
   border: 3px solid #000000;
 }
 
-#publishModal .modal-body form .actions button.submit {
+#publishModal .modal-body form .actions button.submit,
+.finalStep-modal .modal-body form .actions button.submit {
   color: #fff;
   background-color: #000;
 }
