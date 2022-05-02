@@ -17,6 +17,7 @@
 		/>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/bvselect.css" />
 		<!-- Main css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main.css.map" />
@@ -68,28 +69,14 @@
 							<form action="#">
 								<div class="dashboard-field">
 									<h2>Time Duration</h2>
-									<div class="select">
-										<select name="duration" id="duration">
-											<option value="0">10min</option>
-											<option value="1" selected>20min</option>
-											<option value="2">30min</option>
-										</select>
-										<span class="icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="23.616"
-												height="13.503"
-												viewBox="0 0 23.616 13.503"
-											>
-												<path
-													id="Icon_ionic-ios-arrow-forward"
-													data-name="Icon ionic-ios-arrow-forward"
-													d="M9.432,11.8.5,2.874A1.681,1.681,0,0,1,.5.49a1.7,1.7,0,0,1,2.391,0L13.011,10.608a1.685,1.685,0,0,1,.049,2.327L2.893,23.124A1.688,1.688,0,0,1,.5,20.74Z"
-													transform="translate(23.616) rotate(90)"
-												/>
-											</svg>
-										</span>
-									</div>
+									<select id="duration">
+										<option data-separator="true">
+											Select Option
+										</option>
+										<option value="1">10 min</option>
+										<option value="2" selected>20 min</option>
+										<option value="4">30 min</option>
+									</select>
 								</div>
 								<div class="dashboard-field">
 									<h2>Rate</h2>
@@ -166,6 +153,7 @@
 		<!-- All js Goes here -->
 		<script src="assets/js/jquery-3.6.0.min.js"></script>
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/bvselect.js"></script>
 		<script src="assets/js/app.js"></script>
 	</body>
 </html>
