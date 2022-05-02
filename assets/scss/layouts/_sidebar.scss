@@ -7,8 +7,14 @@
 		left: -100%;
 		position: fixed;
 		padding-top: 90px;
+		width: 70%;
+		overflow-y: scroll;
 		@include min(992px) {
 			display: none;
+		}
+
+		@include max(767px) {
+			width: 80%;
 		}
 	}
 
@@ -44,6 +50,10 @@
 				line-height: 52px;
 				font-weight: 700;
 				font-family: "Poppins", sans-serif;
+				@include max(767px) {
+					font-size: 24px;
+					line-height: 32px;
+				}
 			}
 		}
 

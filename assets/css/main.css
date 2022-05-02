@@ -1582,11 +1582,19 @@ input::-webkit-inner-spin-button {
   left: -100%;
   position: fixed;
   padding-top: 90px;
+  width: 70%;
+  overflow-y: scroll;
 }
 
 @media (min-width: 992px) {
   .sidebar--sm {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar--sm {
+    width: 80%;
   }
 }
 
@@ -1622,6 +1630,14 @@ input::-webkit-inner-spin-button {
   line-height: 52px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .sidebar-promo .price h2,
+  .sidebar-promo .price p {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .sidebar-promo a {
