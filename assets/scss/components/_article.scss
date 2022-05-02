@@ -17,7 +17,8 @@
 		}
 
 		.article-heading {
-			display: none;
+			height: 0px;
+			visibility: hidden;
 		}
 
 		.article-info {
@@ -41,6 +42,9 @@
 		transition: all 0.3s linear;
 		@include max(991px) {
 			height: 480px;
+		}
+		@include max(767px) {
+			margin: 0px;
 		}
 		.article-info {
 			top: 0;
@@ -73,10 +77,16 @@
 				@include max(991px) {
 					font-size: 16px;
 					line-height: 22px;
-					margin-bottom: 16px;
+					margin-bottom: 24px;
 				}
 			}
 			blockquote {
+				@include max(1200px) {
+					height: 300px;
+					overflow: hidden;
+					overflow-y: scroll;
+				}
+
 				p {
 					font-size: 22px;
 					line-height: 26px;
@@ -113,16 +123,28 @@
 
 	&-heading {
 		display: flex;
+		height: 220px;
 		justify-content: space-between;
+		transition: all 0.3s linear;
 		@include max(991px) {
 			align-items: flex-end;
 		}
+
+		@include max(767px) {
+			height: 160px;
+		}
+
 		&-info {
 			h2 {
 				color: #182327;
 				font-size: 44px;
 				line-height: 57px;
 				font-weight: 700;
+
+				@include max(1200px) {
+					font-size: 24px;
+					line-height: 32px;
+				}
 
 				@include max(991px) {
 					font-size: 16px;
@@ -191,6 +213,11 @@
 				font-style: italic;
 				margin-bottom: 0px;
 				font-family: "Tinos", serif;
+
+				@include max(1200px) {
+					font-size: 16px;
+					line-height: 26px;
+				}
 
 				@include max(991px) {
 					font-size: 12px;

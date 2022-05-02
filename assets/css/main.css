@@ -124,7 +124,8 @@ input::-webkit-inner-spin-button {
 }
 
 .article:hover .article-heading {
-  display: none;
+  height: 0px;
+  visibility: hidden;
 }
 
 .article:hover .article-info {
@@ -150,6 +151,12 @@ input::-webkit-inner-spin-button {
 @media (max-width: 991px) {
   .article-content {
     height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-content {
+    margin: 0px;
   }
 }
 
@@ -189,7 +196,15 @@ input::-webkit-inner-spin-button {
   .article-content .article-info h2 {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .article-content .article-info blockquote {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 
@@ -228,7 +243,9 @@ input::-webkit-inner-spin-button {
 
 .article-heading {
   display: flex;
+  height: 220px;
   justify-content: space-between;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 991px) {
@@ -237,11 +254,24 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media (max-width: 767px) {
+  .article-heading {
+    height: 160px;
+  }
+}
+
 .article-heading-info h2 {
   color: #182327;
   font-size: 44px;
   line-height: 57px;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .article-heading-info h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -319,6 +349,13 @@ input::-webkit-inner-spin-button {
   font-style: italic;
   margin-bottom: 0px;
   font-family: "Tinos", serif;
+}
+
+@media (max-width: 1200px) {
+  .article-heading-brand p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 991px) {
