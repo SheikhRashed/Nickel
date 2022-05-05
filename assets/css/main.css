@@ -82,6 +82,7 @@ input::-webkit-inner-spin-button {
   padding: 12px 16px;
   border-radius: 60px;
   align-items: center;
+  font-family: "Poppins", sans-serif;
   background-color: rgba(255, 255, 255, 0.444);
 }
 
@@ -514,6 +515,7 @@ input::-webkit-inner-spin-button {
   border-radius: 0px;
   white-space: nowrap;
   text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
   border-right: 1px solid #70707049;
 }
 
@@ -526,7 +528,7 @@ input::-webkit-inner-spin-button {
 
 .tabs .nav-link.active {
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #fff;
   border-bottom: 2px solid #000000;
 }
@@ -599,6 +601,7 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
   color: #000;
   margin-bottom: 24px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -620,6 +623,7 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   transition: all 0.3s linear;
   border: 1px solid transparent;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -645,6 +649,34 @@ input::-webkit-inner-spin-button {
 
 #subscription .modal-content .modal-body .subscriber-card {
   margin-bottom: 24px;
+}
+
+.noUi-target {
+  border: 0px;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.noUi-connects {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header {
@@ -935,6 +967,7 @@ input::-webkit-inner-spin-button {
   padding: 8px 0px;
   border-radius: 60px;
   background-color: #000;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 1380px) {
@@ -961,8 +994,9 @@ input::-webkit-inner-spin-button {
 }
 
 .header-three .bottom .searchbox input::placeholder {
-  text-transform: capitalize;
+  font-style: italic;
   color: inherit;
+  text-transform: capitalize;
 }
 
 .header-three .bottom .searchbox .icon {
@@ -1526,6 +1560,7 @@ input::-webkit-inner-spin-button {
 .author-details .publication p span {
   color: #000;
   font-style: normal;
+  font-weight: 500;
 }
 
 .author-details .publication .bar {
@@ -1628,9 +1663,9 @@ input::-webkit-inner-spin-button {
 
 .articles-content__share input {
   color: #757575;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
-  font-weight: 600;
+  font-weight: 500;
   width: 70%;
   height: 100%;
   background-color: transparent;
@@ -1727,14 +1762,20 @@ input::-webkit-inner-spin-button {
 
 .sidebar-promo {
   padding: 24px;
+  overflow: hidden;
+  position: relative;
   border-radius: 12px;
   position: relative;
-  overflow: hidden;
   text-align: right;
   background: white;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(90deg, white 1%, #737373 100%);
-  position: relative;
+}
+
+@media (max-width: 1600px) {
+  .sidebar-promo {
+    padding: 12px;
+  }
 }
 
 .sidebar-promo .price {
@@ -1749,7 +1790,7 @@ input::-webkit-inner-spin-button {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .sidebar-promo .price h2,
   .sidebar-promo .price p {
     font-size: 24px;
@@ -1769,6 +1810,13 @@ input::-webkit-inner-spin-button {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 1600px) {
+  .sidebar-promo a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 .sidebar-promo-info {
   text-align: initial;
   display: none;
@@ -1784,6 +1832,13 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   font-weight: 600;
   line-height: 52px;
+}
+
+@media (max-width: 1600px) {
+  .sidebar-promo-info .title {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .sidebar-promo-info p {
@@ -1817,6 +1872,13 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 52px;
   font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+  .sidebar-promo-info .content h2 {
+    font-size: 14px;
+    line-height: 36px;
+  }
 }
 
 .sidebar-promo-info .content ul {
@@ -1890,6 +1952,10 @@ body.open .sidebar {
   left: 0;
 }
 
+body.show-details .sidebar-promo-price {
+  display: none;
+}
+
 body.show-details .sidebar-promo-info {
   display: block;
 }
@@ -1923,11 +1989,12 @@ body.show-details .sidebar-promo-info {
 }
 
 .dashboard-setting {
+  z-index: 1;
   height: 100%;
   position: relative;
-  background-color: #161616 !important;
   border-top-left-radius: 12px;
-  z-index: 1;
+  background-color: #161616 !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 .dashboard-setting::after {
@@ -1949,7 +2016,7 @@ body.show-details .sidebar-promo-info {
   padding: 30px 0px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-bottom: 1px solid #707070;
 }
 
@@ -1973,10 +2040,19 @@ body.show-details .sidebar-promo-info {
   font-size: 24px;
   color: #fff;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 34px;
   margin-bottom: 12px;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1480px) {
+  .dashboard-field h2,
+  .dashboard-field select,
+  .dashboard-field .bv_mainselect {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .dashboard-field .bv_mainselect {
@@ -2022,9 +2098,15 @@ body.show-details .sidebar-promo-info {
   align-items: center;
   background-color: #fff;
   font-size: 24px;
-  line-height: 18px;
+  line-height: 34px;
   font-weight: 700;
   margin-right: 24px;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-field__rate .field {
+    font-size: 18px;
+  }
 }
 
 .dashboard-field__rate .field input {
@@ -2510,8 +2592,8 @@ body.show-details .sidebar-promo-info {
 #publishModal .modal-body .profile-contents > h2,
 .finalStep-modal .modal-body .profile-contents > h2 {
   font-size: 24px;
+  font-weight: 500;
   line-height: 35px;
-  font-weight: 600;
   margin-bottom: 32px;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;

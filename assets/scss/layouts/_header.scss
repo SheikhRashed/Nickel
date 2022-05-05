@@ -265,6 +265,7 @@
 				padding: 8px 0px;
 				border-radius: 60px;
 				background-color: #000;
+				font-family: "Poppins", sans-serif;
 				@include max(1380px) {
 					width: 100%;
 				}
@@ -282,8 +283,9 @@
 					font-family: "Poppins", sans-serif;
 
 					&::placeholder {
-						text-transform: capitalize;
+						font-style: italic;
 						color: inherit;
+						text-transform: capitalize;
 					}
 				}
 

@@ -26,11 +26,12 @@
 	}
 
 	&-setting {
+		z-index: 1;
 		height: 100%;
 		position: relative;
-		background-color: #161616 !important;
 		border-top-left-radius: 12px;
-		z-index: 1;
+		background-color: #161616 !important;
+		font-family: "Open Sans", sans-serif;
 		&::after {
 			content: "";
 			position: absolute;
@@ -49,7 +50,7 @@
 			padding: 30px 0px;
 			font-weight: bold;
 			text-transform: uppercase;
-			font-family: "Poppins", sans-serif;
+			font-family: "Open Sans", sans-serif;
 			border-bottom: 1px solid #707070;
 		}
 
@@ -70,10 +71,14 @@
 			font-size: 24px;
 			color: #fff;
 			font-weight: 700;
-			line-height: 18px;
+			line-height: 34px;
 			margin-bottom: 12px;
 			text-transform: capitalize;
-			font-family: "Poppins", sans-serif;
+			font-family: "Open Sans", sans-serif;
+			@include max(1480px) {
+				font-size: 18px;
+				line-height: 26px;
+			}
 		}
 
 		.bv_mainselect {
@@ -118,9 +123,12 @@
 			align-items: center;
 			background-color: #fff;
 			font-size: 24px;
-			line-height: 18px;
+			line-height: 34px;
 			font-weight: 700;
 			margin-right: 24px;
+			@include max(1200px) {
+				font-size: 18px;
+			}
 			input {
 				font-size: inherit;
 				width: 40px;
@@ -226,7 +234,7 @@
 		border-radius: 24px;
 		box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
 
-		@media(max-width: 768px){
+		@media (max-width: 768px) {
 			padding: 0 15px 30px 15px;
 		}
 
@@ -240,7 +248,7 @@
 			line-height: 78px;
 			font-weight: 700;
 
-			@media(max-width: 768px){
+			@media (max-width: 768px) {
 				font-size: 35px;
 				line-height: 1;
 			}

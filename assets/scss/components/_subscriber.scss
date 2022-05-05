@@ -15,7 +15,7 @@
 		top: 20px;
 		left: 50%;
 
-		@media(max-width: 767px){
+		@media (max-width: 767px) {
 			width: 70px;
 			height: 70px;
 			top: 45px;
@@ -43,7 +43,7 @@
 	&__info {
 		padding-top: 60px;
 		padding-bottom: 24px;
-	
+
 		h2 {
 			font-size: 14px;
 			line-height: 10px;
@@ -51,12 +51,13 @@
 			text-transform: uppercase;
 			color: #000;
 			margin-bottom: 24px;
+			font-family: "Poppins", sans-serif;
 		}
 
-		@media(max-width: 767px){
+		@media (max-width: 767px) {
 			padding-top: 45px;
 
-			h2{
+			h2 {
 				line-height: 1.5;
 			}
 		}
@@ -71,7 +72,8 @@
 			font-weight: 700;
 			transition: all 0.3s linear;
 			border: 1px solid transparent;
-			@media(max-width: 767px){
+			font-family: "Montserrat", sans-serif;
+			@media (max-width: 767px) {
 				font-size: 12px;
 				padding: 0.325rem 0.5rem;
 			}

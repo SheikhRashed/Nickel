@@ -53,21 +53,60 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 // financial dropdown
-const financialBtn = document.querySelector(".trigger")
+const financialBtn = document.querySelectorAll(".trigger")
 const financialInfo = document.querySelector(".sidebar-promo")
 
 if (financialBtn) {
-	financialBtn.addEventListener("click", (e) => {
-		e.preventDefault()
+	financialBtn.forEach((btn) => {
+		btn.addEventListener("click", (e) => {
+			e.preventDefault()
+			body.classList.toggle("show-details")
 
-		if (e.target.text === "View Financial") {
-			// change text
-			e.target.text = "Hide Financial"
-			body.classList.add("show-details")
-		} else {
-			// change text
-			e.target.text = "View Financial"
-			body.classList.remove("show-details")
-		}
+			// if (e.target.text === "View Financial") {
+			// 	// change text
+			// 	e.target.text = "Hide Financial"
+			// 	body.classList.add("show-details")
+			// } else {
+			// 	// change text
+			// 	e.target.text = "View Financial"
+			// 	body.classList.remove("show-details")
+			// }
+		})
+	})
+}
+
+var sliderOne = document.getElementById("price-range")
+var valueOne = document.getElementById("price-value")
+
+if (sliderOne) {
+	noUiSlider.create(sliderOne, {
+		start: [4000],
+		step: 1000,
+		range: {
+			min: [2000],
+			max: [10000],
+		},
+	})
+
+	sliderOne.noUiSlider.on("update", function (values, handle) {
+		valueOne.innerHTML = values[handle]
+	})
+}
+
+var sliderTwo = document.getElementById("price-range-one")
+var valueTwo = document.getElementById("price-value-one")
+
+if (sliderTwo) {
+	noUiSlider.create(sliderTwo, {
+		start: [4000],
+		step: 1000,
+		range: {
+			min: [2000],
+			max: [10000],
+		},
+	})
+
+	sliderTwo.noUiSlider.on("update", function (values, handle) {
+		valueTwo.innerHTML = values[handle]
 	})
 }

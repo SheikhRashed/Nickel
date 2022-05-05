@@ -15,6 +15,7 @@
 		/>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/nouislider.min.css" />
 		<!-- Main css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main.css.map" />
@@ -415,12 +416,12 @@
 								<p>$4.35</p>
 							</div>
 
-							<a href="#">View Financial </a>
+							<a href="#" class="trigger">View Financial</a>
 						</div>
 						<div class="sidebar-promo-info">
 							<h2 class="title">Estimate Earning</h2>
-							<p>$300,000/ A Month</p>
-							<span class="bar"></span>
+							<p>$<span id="price-value-one"></span>/ A Month</p>
+							<span id="price-range-one"></span>
 							<div class="content">
 								<h2>100,000 Subscribers</h2>
 								<ul>
@@ -487,8 +488,8 @@
 						</div>
 						<div class="sidebar-promo-info">
 							<h2 class="title">Estimate Earning</h2>
-							<p>$300,000/ A Month</p>
-							<span class="bar"></span>
+							<p>$<span id="price-value"></span>/ A Month</p>
+							<span id="price-range"></span>
 							<div class="content">
 								<h2>100,000 Subscribers</h2>
 								<ul>
@@ -529,6 +530,7 @@
 
 		<!-- All js Goes here -->
 		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
 		<script src="assets/js/app.js"></script>
 	</body>
 </html>

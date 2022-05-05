@@ -37,9 +37,10 @@
 
 	&-promo {
 		padding: 24px;
+		overflow: hidden;
+		position: relative;
 		border-radius: 12px;
 		position: relative;
-		overflow: hidden;
 		text-align: right;
 		background: rgb(255, 255, 255);
 		font-family: "Poppins", sans-serif;
@@ -48,7 +49,10 @@
 			rgba(255, 255, 255, 1) 1%,
 			rgba(115, 115, 115, 1) 100%
 		);
-		position: relative;
+
+		@include max(1600px) {
+			padding: 12px;
+		}
 
 		.price {
 			text-align: right;
@@ -59,7 +63,7 @@
 				line-height: 52px;
 				font-weight: 700;
 				font-family: "Poppins", sans-serif;
-				@include max(1200px) {
+				@include max(1600px) {
 					font-size: 24px;
 					line-height: 32px;
 				}
@@ -76,6 +80,11 @@
 			text-transform: capitalize;
 			text-decoration: underline;
 			font-family: "Poppins", sans-serif;
+
+			@include max(1600px) {
+				font-size: 16px;
+				line-height: 26px;
+			}
 		}
 
 		&-info {
@@ -91,6 +100,10 @@
 				font-size: 18px;
 				font-weight: 600;
 				line-height: 52px;
+				@include max(1600px) {
+					font-size: 14px;
+					line-height: 24px;
+				}
 			}
 
 			p {
@@ -124,6 +137,11 @@
 					font-size: 18px;
 					line-height: 52px;
 					font-weight: 700;
+
+					@include max(1600px) {
+						font-size: 14px;
+						line-height: 36px;
+					}
 				}
 
 				ul {
@@ -201,6 +219,10 @@ body {
 	}
 
 	&.show-details {
+		.sidebar-promo-price {
+			display: none;
+		}
+
 		.sidebar-promo-info {
 			display: block;
 		}
