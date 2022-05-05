@@ -237,6 +237,9 @@
 
 	&-stream {
 		padding-top: 860px;
+		@media(max-width: 767px){
+			padding-top: 400px;
+		}
 		.banner {
 			&-content {
 				width: 98%;
