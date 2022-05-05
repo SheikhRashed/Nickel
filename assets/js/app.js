@@ -7,7 +7,7 @@ if (btn) {
 	btn.addEventListener("click", (e) => {
 		e.preventDefault()
 
-		body.classList.toggle("open")
+		body.classList.add("open")
 	})
 }
 
@@ -51,3 +51,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}
 })
+
+// financial dropdown
+const financialBtn = document.querySelector(".trigger")
+const financialInfo = document.querySelector(".sidebar-promo")
+
+if (financialBtn) {
+	financialBtn.addEventListener("click", (e) => {
+		e.preventDefault()
+
+		if (e.target.text === "View Financial") {
+			// change text
+			e.target.text = "Hide Financial"
+			body.classList.add("show-details")
+		} else {
+			// change text
+			e.target.text = "View Financial"
+			body.classList.remove("show-details")
+		}
+	})
+}
