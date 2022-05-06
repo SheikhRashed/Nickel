@@ -19,23 +19,6 @@ if (closeBtn) {
 	})
 }
 
-var header = document.querySelector(".header.header-primary")
-
-if (header) {
-	var sticky = header.offsetTop
-
-	window.onscroll = function () {
-		myFunction()
-	}
-
-	function myFunction() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add("bg")
-		} else {
-			header.classList.remove("bg")
-		}
-	}
-}
 
 document.addEventListener("DOMContentLoaded", function () {
 	if (document.querySelector("#duration")) {
@@ -80,10 +63,10 @@ var valueOne = document.getElementById("price-value")
 
 if (sliderOne) {
 	noUiSlider.create(sliderOne, {
-		start: [4000],
-		step: 1000,
+		start: [3000],
+		step: 500,
 		range: {
-			min: [2000],
+			min: [1000],
 			max: [10000],
 		},
 	})
