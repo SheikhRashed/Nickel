@@ -69,7 +69,9 @@
 
 		&-info {
 			h2,
-			a {
+			a,
+			textarea,
+			input {
 				color: #fff;
 				font-size: 92px;
 				line-height: 78px;
@@ -87,14 +89,35 @@
 				}
 			}
 
-			p {
+			input,
+			textarea {
+				height: 180px;
+				border: 0;
+				resize: none;
+				color: #fff;
+				overflow: hidden;
+				background-color: transparent;
+
+				&:focus {
+					outline: none;
+					border: none;
+				}
+
+				&::placeholder {
+					color: #fff;
+				}
+			}
+
+			.newscontent-brief {
 				color: #fff;
 				font-size: 37px;
 				font-weight: 300;
 				line-height: 43px;
 				font-style: italic;
 				margin-bottom: 12px;
+				width: 100%;
 				font-family: "Tinos", serif;
+				text-align: left;
 				@include max(767px) {
 					max-width: 300px;
 				}
@@ -108,6 +131,10 @@
 				}
 				@include max(767px) {
 					line-height: 20px;
+				}
+
+				&::placeholder {
+					color: #fff;
 				}
 			}
 
