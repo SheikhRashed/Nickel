@@ -174,9 +174,15 @@
 	border-top-right-radius: 38px;
 	border-bottom-right-radius: 38px;
 	box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
-
 	@include max(575px) {
-		display: none;
+		top: auto;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+		overflow-x: scroll;
+		align-items: center;
+		border-radius: 0px;
 	}
 
 	li {
@@ -188,6 +194,12 @@
 		@include max(767px) {
 			padding: 12px;
 		}
+
+		@include max(575px) {
+			border: 0px;
+			border-right: 1px solid rgba(0, 0, 0, 0.395);
+		}
+
 		&:nth-last-child(1) {
 			border: 0px;
 		}

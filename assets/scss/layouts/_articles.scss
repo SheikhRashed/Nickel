@@ -168,6 +168,10 @@
 		margin: 45px 0px;
 	}
 	blockquote {
+		margin: 0;
+		@include max(575px) {
+			padding-bottom: 120px;
+		}
 		p {
 			color: #000000;
 			font-size: 22px;
@@ -183,6 +187,10 @@
 
 	&-wrapper {
 		position: relative;
+
+		blockquote {
+			padding-bottom: 60px;
+		}
 	}
 
 	&-edit {
@@ -213,6 +221,10 @@
 		@include max(991px) {
 			padding: 12px 24px;
 			width: 100%;
+		}
+
+		@include max(767px) {
+			margin-top: 60px;
 		}
 
 		input {
@@ -257,5 +269,13 @@
 		top: 0;
 		left: 0;
 		position: absolute;
+
+		@include max(575px) {
+			top: auto;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
 	}
 }

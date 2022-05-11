@@ -1610,6 +1610,16 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.articles-content blockquote {
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .articles-content blockquote {
+    padding-bottom: 120px;
+  }
+}
+
 .articles-content blockquote p {
   color: #000000;
   font-size: 22px;
@@ -1627,6 +1637,10 @@ input::-webkit-inner-spin-button {
 
 .articles-content-wrapper {
   position: relative;
+}
+
+.articles-content-wrapper blockquote {
+  padding-bottom: 60px;
 }
 
 .articles-content-edit {
@@ -1659,6 +1673,12 @@ input::-webkit-inner-spin-button {
   .articles-content__share {
     padding: 12px 24px;
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .articles-content__share {
+    margin-top: 60px;
   }
 }
 
@@ -1707,6 +1727,16 @@ input::-webkit-inner-spin-button {
   top: 0;
   left: 0;
   position: absolute;
+}
+
+@media (max-width: 575px) {
+  .articles-content .sticky-sidebar {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .sidebar {
@@ -1912,7 +1942,14 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 575px) {
   .sticky-sidebar {
-    display: none;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    align-items: center;
+    border-radius: 0px;
   }
 }
 
@@ -1927,6 +1964,13 @@ input::-webkit-inner-spin-button {
 @media (max-width: 767px) {
   .sticky-sidebar li {
     padding: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sticky-sidebar li {
+    border: 0px;
+    border-right: 1px solid rgba(0, 0, 0, 0.395);
   }
 }
 
@@ -2584,6 +2628,15 @@ body.show-details .sidebar-promo-info {
   margin-bottom: 60px;
 }
 
+@media (max-width: 767px) {
+  #publishModal .modal-body > h2,
+  .finalStep-modal .modal-body > h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
+
 #publishModal .modal-body .profile-contents,
 .finalStep-modal .modal-body .profile-contents {
   text-align: center;
@@ -2598,6 +2651,14 @@ body.show-details .sidebar-promo-info {
   margin-bottom: 32px;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 767px) {
+  #publishModal .modal-body .profile-contents > h2,
+  .finalStep-modal .modal-body .profile-contents > h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 #publishModal .modal-body .profile-contents .profile-contents__item,
@@ -2616,6 +2677,14 @@ body.show-details .sidebar-promo-info {
     width: 100%;
     flex-direction: column;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #publishModal .modal-body .profile-contents .profile-contents__item,
+  .finalStep-modal .modal-body .profile-contents .profile-contents__item {
+    padding: 0px 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -2663,6 +2732,13 @@ body.show-details .sidebar-promo-info {
   margin-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+  #publishModal .modal-body .profile-contents .profile-contents__item .profile-box__icon,
+  .finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box__icon {
+    margin-bottom: 12px;
+  }
+}
+
 #publishModal .modal-body .profile-contents .profile-contents__item .profile-box p,
 .finalStep-modal .modal-body .profile-contents .profile-contents__item .profile-box p {
   color: #000;
@@ -2686,6 +2762,13 @@ body.show-details .sidebar-promo-info {
   #publishModal .modal-body form > h2,
   .finalStep-modal .modal-body form > h2 {
     text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #publishModal .modal-body form > h2,
+  .finalStep-modal .modal-body form > h2 {
+    text-align: center;
   }
 }
 
@@ -2727,6 +2810,14 @@ body.show-details .sidebar-promo-info {
   .finalStep-modal .modal-body form .form-content {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  #publishModal .modal-body form .form-content,
+  .finalStep-modal .modal-body form .form-content {
+    padding: 0px 24px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2801,6 +2892,13 @@ body.show-details .sidebar-promo-info {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  #publishModal .modal-body form .actions,
+  .finalStep-modal .modal-body form .actions {
+    padding: 24px;
+  }
+}
+
 #publishModal .modal-body form .actions button,
 .finalStep-modal .modal-body form .actions button {
   font-size: 16px;
@@ -2810,6 +2908,13 @@ body.show-details .sidebar-promo-info {
   border-radius: 38px;
   display: inline-block;
   border: 3px solid #000000;
+}
+
+@media (max-width: 767px) {
+  #publishModal .modal-body form .actions button,
+  .finalStep-modal .modal-body form .actions button {
+    padding: 12px;
+  }
 }
 
 #publishModal .modal-body form .actions button.submit,
@@ -2862,5 +2967,12 @@ body.show-details .sidebar-promo-info {
   border-radius: 24px;
   display: inline-block;
   background-color: #000;
+}
+
+@media (max-width: 767px) {
+  #addUrlModal .modal-body .submit {
+    padding: 12px;
+    width: 120px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
