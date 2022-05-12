@@ -106,6 +106,9 @@
 				margin: 0px auto;
 				white-space: nowrap;
 				display: inherit;
+				@include max(767px) {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -234,6 +234,12 @@ input::-webkit-inner-spin-button {
   display: inherit;
 }
 
+@media (max-width: 767px) {
+  .article-content .article-info .btn {
+    width: 100%;
+  }
+}
+
 .article-img {
   width: 100%;
   height: 100%;
@@ -864,6 +870,12 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media (max-width: 767px) {
+  .header-three .bottom .container-fluid {
+    padding: 0px;
+  }
+}
+
 .header-three .bottom .author-profile {
   display: flex;
   align-items: center;
@@ -878,6 +890,12 @@ input::-webkit-inner-spin-button {
   margin-right: 40px;
   align-items: center;
   position: relative;
+}
+
+@media (max-width: 575px) {
+  .header-three .bottom .author-profile__info {
+    margin-right: 24px;
+  }
 }
 
 .header-three .bottom .author-profile__info h2,
@@ -956,6 +974,13 @@ input::-webkit-inner-spin-button {
   background-color: #000;
 }
 
+@media (max-width: 575px) {
+  .header-three .bottom .author-profile__img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .header-three .bottom .author-profile__img img {
   width: 90%;
   height: 90%;
@@ -974,6 +999,19 @@ input::-webkit-inner-spin-button {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+}
+
+@media (max-width: 575px) {
+  .header-three .bottom .author-profile__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-three .bottom .author-profile__icon svg {
+    width: 18px;
+  }
 }
 
 .header-three .bottom .searchbox {
@@ -1026,12 +1064,17 @@ input::-webkit-inner-spin-button {
 }
 
 .header-three .bottom .menu {
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
 .header-three .bottom .menu li {
   margin-right: 12px;
+}
+
+.header-three .bottom .menu li:nth-last-child(1) {
+  margin: 0;
 }
 
 .header-three .bottom .menu li a,
@@ -1047,6 +1090,13 @@ input::-webkit-inner-spin-button {
   text-transform: capitalize;
   transition: all 0.3s linear;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 575px) {
+  .header-three .bottom .menu li a,
+  .header-three .bottom .menu li button {
+    padding: 12px;
+  }
 }
 
 .header-three .bottom .menu li a:hover,

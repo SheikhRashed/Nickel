@@ -149,6 +149,9 @@
 				@include max(1199px) {
 					flex-direction: column;
 				}
+				@include max(767px) {
+					padding: 0px;
+				}
 			}
 
 			.author-profile {
@@ -164,6 +167,11 @@
 					margin-right: 40px;
 					align-items: center;
 					position: relative;
+
+					@include max(575px) {
+						margin-right: 24px;
+					}
+
 					h2,
 					p,
 					input {
@@ -234,6 +242,11 @@
 					margin-right: 12px;
 					background-color: #000;
 
+					@include max(575px) {
+						width: 40px;
+						height: 40px;
+					}
+
 					img {
 						width: 90%;
 						height: 90%;
@@ -253,6 +266,16 @@
 					border-radius: 50%;
 					background-color: #fff;
 					box-shadow: -3px 7px 16px 1px rgba(0, 0, 0, 0.089);
+					@include max(575px) {
+						width: 40px;
+						height: 40px;
+					}
+
+					svg {
+						@include max(575px) {
+							width: 18px;
+						}
+					}
 				}
 			}
 
@@ -299,11 +322,16 @@
 			}
 
 			.menu {
+				padding: 0;
 				display: flex;
 				align-items: center;
 
 				li {
 					margin-right: 12px;
+
+					&:nth-last-child(1) {
+						margin: 0;
+					}
 
 					a,
 					button {
@@ -318,7 +346,9 @@
 						text-transform: capitalize;
 						transition: all 0.3s linear;
 						font-family: "Montserrat", sans-serif;
-
+						@include max(575px) {
+							padding: 12px;
+						}
 						&:hover {
 							background-color: #000;
 							color: #fff;
