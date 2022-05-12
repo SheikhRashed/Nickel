@@ -97,6 +97,9 @@
 				color: #fff;
 				overflow: hidden;
 				background-color: transparent;
+				@include max(991px) {
+					height: 100%;
+				}
 
 				&:focus {
 					outline: none;

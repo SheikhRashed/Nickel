@@ -180,7 +180,7 @@
 	blockquote {
 		margin: 0;
 		@include max(575px) {
-			padding-bottom: 120px;
+			padding-bottom: 60px;
 		}
 		p {
 			color: #000000;
@@ -285,6 +285,7 @@
 			bottom: 0;
 			width: 100%;
 			display: flex;
+			position: fixed;
 			align-items: center;
 		}
 	}

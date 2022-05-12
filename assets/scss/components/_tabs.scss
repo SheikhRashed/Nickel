@@ -1,6 +1,9 @@
 .tabs {
-	position: relative;
 	overflow: hidden;
+	position: relative;
+	@include max(575px) {
+		margin-bottom: 60px;
+	}
 	&-wrapper {
 		border-radius: 24px;
 		background-color: #fff;
